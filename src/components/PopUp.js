@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Modal from 'react-modal';
+import Form from './Form';
 
 const popUpStyles = {
   overlay : {
@@ -43,19 +44,13 @@ class PopUp extends Component{
           onRequestClose={this.props.onRequestClose}
           closeTimeoutMS={300}
           style={popUpStyles}
-          contentLabel="Modal"
+          contentLabel="Modalsss"
         >
-
-          <h2 ref="subtitle">Hello</h2>
           <button onClick={this.props.onRequestClose}>close</button>
-          <div>I am a modal</div>
-          <form>
-            <input />
-            <button>tab navigation</button>
-            <button>stays</button>
-            <button>inside</button>
-            <button>the modal</button>
-          </form>
+          <h2 ref="subtitle">What muscles did you exercises today?</h2>
+    
+
+          <Form/>
         </Modal>
       </div>
 
