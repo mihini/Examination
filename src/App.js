@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import MyCalendar from './components/Calendar';
 import PopUp from './components/PopUp';
+// import Form from './components/Form';
 
 
 class App extends Component {
@@ -9,8 +10,9 @@ class App extends Component {
     super();
 
     this.state = {
-      modalIsOpen:false
-  };
+      modalIsOpen:false,
+      //checkboxIsChecked:false
+    };
 
   this.openModal = this.openModal.bind(this);
   this.closeModal = this.closeModal.bind(this);
